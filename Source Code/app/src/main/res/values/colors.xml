@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c172e</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#a12f9e</color>
+    <color name="white">#ffffff</color>
+    <color name="white80">#80ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black40">#40000000</color>
+    <color name="black20">#20000000</color>
+    <color name="blackAA">#AA000000</color>
+    <color name="black_nav">#cc000000</color>
+    <color name="abcdef">#abcdef</color>
+    <color name="nav_checked">#dc473a</color>
+    <color name="primary_progress">#2b1d58</color>
+    <color name="secondary_progress">#B5A0F7</color>
+    <color name="player_Artist">#686075</color>
+    <color name="statusBar">#27262e</color>
+    <color name="pink">#a12f9e</color>
+    <color name="bg_gradient_color1">#5d305c</color>
+    <color name="bg_gradient_color2">#2a1d58</color>
+    <color name="orange">#f99120</color>
+    <color name="bg_navi_selected">#a12f9e</color>
+    <color name="bg_navi_text_selected">#ffffff</color>
+    <color name="bg_navi_image_selected">#ffffff</color>
+    <color name="bg_navi_unselected">#ffffff</color>
+    <color name="bg_navi_text_unselected">#AA000000</color>
+    <color name="grey">#96a3ac</color>
+    <color name="red">#ff0000</color>
+</resources>

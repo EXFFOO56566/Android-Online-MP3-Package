@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_playlist"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:background="@drawable/bg_gradient"
+        android:textColor="@color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_dialog_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/textView_empty_dialog_pl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text="@string/no_data_found"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:layout_gravity="center"
+        app:backgroundTint="@color/pink"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

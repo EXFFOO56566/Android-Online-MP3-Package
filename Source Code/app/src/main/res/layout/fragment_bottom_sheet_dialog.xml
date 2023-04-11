@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:padding="12dp"
+        android:text="@string/rating"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="1"/>
+
+    <WebView
+        android:id="@+id/webView_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black20" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_detail_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:text="@string/close"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/pink" />
+
+</LinearLayout>

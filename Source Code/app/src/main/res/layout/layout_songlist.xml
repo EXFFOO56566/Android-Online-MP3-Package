@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="@color/black40"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_songlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_songlist"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_songname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/textView_catname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="sdasd"
+                android:textColor="@color/white80"
+                android:textSize="10sp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingBar_songlist"
+                    style="@style/RatingBar_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:numStars="5"
+                    android:theme="@style/RatingBar_white"/>
+
+                <TextView
+                    android:id="@+id/textView_totalrate_songlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/bg_round_white"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:text="32"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <es.claucookie.miniequalizerlibrary.EqualizerView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/equalizer_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:visibility="invisible"
+            custom:animDuration="3000"
+            custom:foregroundColor="@color/pink" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_songduration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="asad"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_option_songlist"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bar_selector_white"
+        android:src="@mipmap/more_option" />
+
+    <LinearLayout
+        android:id="@+id/ll_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/views" />
+
+        <TextView
+            android:id="@+id/textView_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:src="@mipmap/download_arrow" />
+
+        <TextView
+            android:id="@+id/textView_downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

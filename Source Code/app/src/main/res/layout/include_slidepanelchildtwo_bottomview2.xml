@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_playlist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bottombar_addtoplay"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bar_selector_white"
+            android:src="@mipmap/add_to_playlist" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_playlist"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_verticle_black" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bottombar_shareicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bar_selector_white"
+            android:src="@mipmap/share" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_verticle_black"/>
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView_download"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bar_selector_white"
+            android:src="@mipmap/download" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_download"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_verticle_black"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_rate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bar_selector_white"
+            android:src="@mipmap/rate_btn" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_rate"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_verticle_black"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_volume"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bar_selector_white"
+            android:src="@mipmap/volume" />
+
+    </LinearLayout>
+
+</LinearLayout>

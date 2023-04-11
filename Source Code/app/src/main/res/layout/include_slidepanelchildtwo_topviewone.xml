@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_topviewone"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="3dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_toStartOf="@+id/bottombar_previous"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/img_bottom_slideone"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_default_album_art"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/txt_songname_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:freezesText="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_artist_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white80"
+                android:textStyle="normal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottombar_previous"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_toStartOf="@+id/bottombar_play"
+        android:src="@drawable/ic_rew_dark"/>
+
+    <ImageView
+        android:id="@+id/bottombar_play"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/bottombar_next"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/play_pink"/>
+
+    <ImageView
+        android:id="@+id/bottombar_next"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/ic_fwd_dark"/>
+
+</RelativeLayout>
